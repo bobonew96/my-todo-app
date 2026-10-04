@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- CDN引入 -->
+    <!-- Ionic Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js">
+    </script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js">
+    </script>
+
+
+    <Style>
+        /* 風格顔色(暫定馬卡龍色) 
+            文字大小
+            */
+    </style>
+
+
+    <ion-app>
+        <div class="ion-page">
+
+            <!-- Header / Navbar -->
+            <ion-header translucent="true">
+                <ion-toolbar color="primary">
+                    <ion-title>人生管理器</ion-title> <!-- 程式標題(APP名) -->
+                </ion-toolbar>
+            </ion-header>
+
+            <!-- Main Scrollable Content -->
+            <ion-content class="ion-padding" fullscreen="true">
+
+                <ion-header collapse="condense">
+                    <ion-toolbar>
+                        <ion-title size="large">My App</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+
+
+
+
+            </ion-content>
+        </div>
+    </ion-app>
+    <!---->
+    <ion-header>
+
+    </ion-header>
+    <!-- <body></body> -->
+    <!-- 所有tab用圖案代替文字 -->
+    <ion-modal> </ion-modal> <!-- 歡迎頁+登入 一打開自動彈出-->
+    <ion-modal> </ion-modal> <!-- 新增目標頁面 按fab后才會彈出-->
+    <ion-fab> </ion-fab> <!-- 浮動圓形圖標：新增目標 -->
+
+    <!-- 各大核心功能 用分頁分類 同個範疇的盡量放在一起 -->
+    <ion-tabs> <!-- 承載tab 勿動 -->
+        <ion-tab tab="tabTimer">
+            <div id="tabTimer-page" class="ion-page">
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Timer</ion-title>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content>
+                  <div class="example-content">timer content</div>
+                </ion-content>
+              </div>
+        </ion-tab><!-- 計時器 -->
+
+        <ion-tab tab="tabNewGoal"></ion-tab> <!-- 新增 -->
+        <ion-tab tab="tabCheckIn"></ion-tab> <!-- 打卡 -->
+        <ion-tab tab="tabGoalManage"></ion-tab> <!-- 目標管理 -->
+        <ion-tab tab="tabAcInfo"></ion-tab> <!-- 賬戶資訊 -->
+
+
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="home">
+              <ion-icon name="play-circle"></ion-icon>
+              Listen Now
+            </ion-tab-button>
+            <ion-tab-button tab="radio">
+              <ion-icon name="radio"></ion-icon>
+              Radio
+            </ion-tab-button>
+            <ion-tab-button tab="library">
+              <ion-icon name="library"></ion-icon>
+              Library
+            </ion-tab-button>
+            <ion-tab-button tab="search">
+              <ion-icon name="search"></ion-icon>
+              Search
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+
+
+        
+    </ion-tabs>
+
+
+</head>
+
+</html>
